@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unblocked Finder</title>
+
+    <style>
+        body {
+            background-color: #000000ff;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .logo {
+            width: 200px;
+            height: 200px;
+            object-fit: contain;
+            display: block;
+            margin: 0 auto 15px;
+        }
+
+        h1 {
+            font-size: 35px;
+            margin-bottom: 25px;
+        }
+
+        input {
+            width: 300px;
+            padding: 14px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 14px 22px;
+            border: none;
+            border-radius: 8px;
+            background-color: #0cce10ff;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #15ab35ff;
+        }
+
+        .discord-link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+
+        .discord-link img {
+            width: 25px;
+            height: 25px;
+        }
+
+        .discord-link a {
+            color: #5865F2;
+            text-decoration: underline;
+        }
+
+        .discord-link a:hover {
+            color: #8992ff;
+        }
+
+        #message {
+            margin-top: 15px;
+            color: #ff5555;
+        }
+
+        .version {
+            position: fixed;
+            bottom: 10px;
+            right: 15px;
+            font-size: 12px;
+            color: #888888;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Main Logo -->
+    <img
+        src="Unblocked_Finder_icon.png"
+        alt="Unblocked Finder Logo"
+        class="logo"
+    >
+
+    <h1>Unblocked Finder1111</h1>
+
+    <input
+        type="text"
+        id="search"
+        placeholder="Access Code..."
+    >
+
+    <button onclick="go()">Go</button>
+
+    <div class="discord-link">
+
+        <img src="discord-new-logo.jpg" alt="Discord">
+
+        <a
+            href="https://discord.gg/Z4NjvnCv4Z"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            Discord Server
+        </a>
+
+    </div>
+
+    <p id="message"></p>
+
+</div>
+
+<div class="version">Version 1.0</div>
+
+<script>
+    function go() {
+        const input = document.getElementById("search").value;
+        const message = document.getElementById("message");
+
+        if (input === "Unblocked143!!") {
+
+            const websites = [
+                "https://www.youtube.com/",
+                "https://www.rockstargames.com/",
+                "https://www.roblox.com/home"
+            ];
+
+            const randomWebsite =
+                websites[Math.floor(Math.random() * websites.length)];
+
+            window.open(randomWebsite, "_blank");
+
+            message.textContent = "";
+
+        } else {
+            message.textContent = "Incorrect code! If you believe this is the right code, the code may have been updated. Check the discord server for the new code.";
+        }
+    }
+</script>
+
+</body>
+</html>
